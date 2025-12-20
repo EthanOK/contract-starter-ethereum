@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://gitlab.cheerex.info/bric-labs/bric-contract-starter/compare/v1.1.0...v1.1.1) (2025-12-20)
+
+
+### Features
+
+* add commitizen and cz-git ([b1b04c3](https://gitlab.cheerex.info/bric-labs/bric-contract-starter/commit/b1b04c3175bb247e6e05edebbf84cc2449c9293d))
+
 ## 1.1.0 (2025-11-26)
 
 

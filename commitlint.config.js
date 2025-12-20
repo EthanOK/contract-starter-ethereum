@@ -60,7 +60,7 @@ export default defineConfig({
     useAI: false,
     aiNumber: 1,
     themeColorCode: "",
-    scopes: [],
+    scopes: ["release"],
     allowCustomScopes: true,
     allowEmptyScopes: true,
     customScopesAlign: "bottom",
