@@ -14,7 +14,14 @@ const LockModule = buildModule("LockModule", (m) => {
     value: lockedAmount,
   });
 
+  m.call(lock, "rescue");
+
   return { lock };
 });
 
 export default LockModule;
+// deploy
+// yarn hardhat ignition deploy ignition/modules/Lock.ts --network sepolia
+
+// verify
+// yarn hardhat verify --network sepolia 0x8DA46934989084251B51C89549B29adBc764109d 1893456000

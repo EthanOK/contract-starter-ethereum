@@ -16,6 +16,37 @@ export default defineConfig({
       viaIR: true,
     },
   },
+  networks: {
+    sepolia: {
+      type: "http",
+      chainType: "l1",
+      url: process.env.SEPOLIA_RPC_URL!,
+      accounts: [process.env.SEPOLIA_PRIVATE_KEY!],
+    },
+    hoodi: {
+      type: "http",
+      chainType: "l1",
+      url: process.env.HOODI_RPC_URL!,
+      accounts: [process.env.HOODI_PRIVATE_KEY!],
+    },
+    tbsc: {
+      type: "http",
+      chainType: "l1",
+      url: process.env.TBSC_RPC_URL!,
+      accounts: [process.env.TBSC_PRIVATE_KEY!],
+    },
+  },
+  verify: {
+    etherscan: {
+      apiKey: process.env.ETHERSCAN_API_KEY,
+    },
+    blockscout: {
+      enabled: false,
+    },
+    sourcify: {
+      enabled: false,
+    },
+  },
   contractSizer: {
     alphaSort: true,
     runOnCompile: false,
