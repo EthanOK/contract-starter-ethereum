@@ -1,3 +1,3 @@
-# bric-contract-starter
+# contract-starter-ethereum
 
-bric contract starter
+contract starter for ethereum

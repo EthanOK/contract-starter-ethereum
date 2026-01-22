@@ -1,16 +1,17 @@
 {
-  "name": "bric-contract-starter",
+  "name": "contract-starter-ethereum",
   "version": "1.1.2",
   "type": "module",
   "description": "This repository contains the core smart contracts for the Bric Protocol.",
   "main": "index.js",
   "keywords": [
-    "bric",
     "contract",
-    "starter"
+    "starter",
+    "ethereum"
   ],
-  "author": "bric-labs",
+  "author": "0xEthan Labs",
   "license": "MIT",
+  "repository": "https://github.com/EthanOK/contract-starter-ethereum.git",
   "scripts": {
     "prepare": "husky install",
     "build": "yarn hardhat build && forge build",
@@ -19,7 +20,7 @@
     "test:hh": "yarn hardhat test",
     "test:ff": "forge test -vvv",
     "node": "anvil --fork-url hoodi",
-    "format": "prettier -w contracts/**/* test_forge/**/* test/**/*",
+    "format": "prettier -w contracts/** test_forge/** test/**",
     "release": "standard-version",
     "commit": "git add . && git-cz"
   },
@@ -70,13 +71,13 @@
     "@openzeppelin/contracts-upgradeable": "5.5.0"
   },
   "lint-staged": {
-    "contracts/**/*.sol": [
+    "contracts/**": [
       "prettier --write"
     ],
-    "test_forge/**/*.sol": [
+    "test_forge/**": [
       "prettier --write"
     ],
-    "test/**/*.{js,ts,sol}": [
+    "test/**": [
       "prettier --write"
     ]
   },
