@@ -1,6 +1,6 @@
 {
   "name": "contract-starter-ethereum",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "type": "module",
   "description": "This repository contains the core smart contracts for the Bric Protocol.",
   "main": "index.js",
