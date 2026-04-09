@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "slowmist-agent-security": {
+      "source": "slowmist/slowmist-agent-security",
+      "sourceType": "github",
+      "computedHash": "55697e4f500fc73abf22b2efda68510ad78abc232ab9eb5bf23c11ca7fc02681"
+    }
+  }
+}
