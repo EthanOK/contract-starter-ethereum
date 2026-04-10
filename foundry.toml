@@ -5,9 +5,13 @@ libs = ['node_modules', 'lib']
 test = 'test_forge'
 cache_path = 'cache_forge'
 via_ir = true
-solc = '0.8.26'
+solc = '0.8.34'
 optimizer_runs = 200
-evm_version = 'cancun'
+evm_version = 'osaka'
+
+# Disable metadata hash for deterministic bytecode
+bytecode_hash = "none"
+cbor_metadata = false
 
 [rpc_endpoints]
 mainnet = "${MAINNET_RPC_URL}"

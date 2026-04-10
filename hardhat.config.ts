@@ -6,14 +6,18 @@ import "dotenv/config";
 export default defineConfig({
   plugins: [hardhatToolboxMochaEthersPlugin, hardhatContractSizer],
   solidity: {
-    version: "0.8.26",
+    version: "0.8.34",
     settings: {
-      evmVersion: "cancun",
+      evmVersion: "osaka",
       optimizer: {
         enabled: true,
         runs: 200,
       },
       viaIR: true,
+      metadata: {
+        appendCBOR: false,
+        bytecodeHash: "none",
+      },
     },
   },
   networks: {
