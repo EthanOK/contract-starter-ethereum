@@ -38,4 +38,4 @@ contract LockTest is Test {
     }
 }
 
-// yarn hardhat test solidity test/Lock.t.sol -vvv
+// yarn hardhat test solidity test_hardhat/Lock.t.sol -vvv

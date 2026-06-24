@@ -16,11 +16,12 @@
     "prepare": "husky install",
     "build": "yarn hardhat build && forge build",
     "size": "yarn hardhat contract-size list && forge build --sizes",
-    "test": "yarn hardhat test && forge test -vvv",
-    "test:hh": "yarn hardhat test",
-    "test:ff": "forge test -vvv",
+    "test": "yarn test:hardhat && yarn test:forge",
+    "test:hardhat": "yarn hardhat test",
+    "test:forge": "forge test -vvv",
+    "test:base-forge": "base-forge test -vvv",
     "node": "anvil --fork-url hoodi",
-    "format": "prettier -w contracts/** test_forge/** test/**",
+    "format": "prettier -w contracts/** test_hardhat/** test_forge/**",
     "release": "standard-version",
     "commit": "git add . && git-cz"
   },
@@ -36,27 +37,27 @@
     }
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^4.0.3",
-    "@nomicfoundation/hardhat-ethers-chai-matchers": "^3.0.2",
-    "@nomicfoundation/hardhat-ignition": "^3.0.6",
-    "@nomicfoundation/hardhat-ignition-ethers": "^3.0.6",
-    "@nomicfoundation/hardhat-keystore": "^3.0.3",
-    "@nomicfoundation/hardhat-mocha": "^3.0.8",
-    "@nomicfoundation/hardhat-network-helpers": "^3.0.3",
-    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.2",
-    "@nomicfoundation/hardhat-typechain": "^3.0.1",
-    "@nomicfoundation/hardhat-verify": "^3.0.8",
-    "@solidstate/hardhat-contract-sizer": "^3.0.0",
+    "@nomicfoundation/hardhat-ethers": "^4.0.13",
+    "@nomicfoundation/hardhat-ethers-chai-matchers": "^3.0.10",
+    "@nomicfoundation/hardhat-ignition": "^3.1.7",
+    "@nomicfoundation/hardhat-ignition-ethers": "^3.1.6",
+    "@nomicfoundation/hardhat-keystore": "^3.0.12",
+    "@nomicfoundation/hardhat-mocha": "^3.0.21",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.10",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.7",
+    "@nomicfoundation/hardhat-typechain": "^3.1.1",
+    "@nomicfoundation/hardhat-verify": "^3.0.20",
+    "@solidstate/hardhat-contract-sizer": "^3.0.3",
     "@types/chai": "^4.2.0",
     "@types/chai-as-promised": "^8.0.1",
     "@types/mocha": ">=10.0.10",
-    "@types/node": "^24.10.0",
+    "@types/node": "^26.0.0",
     "chai": "^5.1.2",
     "commitizen": "^4.3.1",
     "cz-git": "^1.12.0",
     "dotenv": "^17.2.3",
     "ethers": "^6.16.0",
-    "hardhat": "^3.1.0",
+    "hardhat": "^3.9.0",
     "husky": "^9.1.7",
     "mocha": "^11.0.0",
     "prettier": "3.6.2",
@@ -64,7 +65,7 @@
     "standard-version": "^9.5.0",
     "ts-node": ">=8.0.0",
     "typechain": "^8.3.2",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "dependencies": {
     "@openzeppelin/contracts": "5.5.0",
@@ -74,10 +75,10 @@
     "contracts/**": [
       "prettier --write"
     ],
-    "test_forge/**": [
+    "test_hardhat/**": [
       "prettier --write"
     ],
-    "test/**": [
+    "test_forge/**": [
       "prettier --write"
     ]
   },

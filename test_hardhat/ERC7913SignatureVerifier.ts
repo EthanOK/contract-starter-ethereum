@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { ethers, ZeroAddress } from "ethers";
 import { network } from "hardhat";
 
-const { ethers: hhEthers, networkHelpers } = await network.connect();
+const { ethers: hhEthers, networkHelpers } = await network.create();
 
 const ERC1271_MAGIC_VALUE = "0x1626ba7e";
 const ERC1271_INVALID = "0xffffffff";

@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { network } from "hardhat";
 
-const { ethers, networkHelpers } = await network.connect();
+const { ethers, networkHelpers } = await network.create();
 
 describe("Lock", function () {
   async function deployLockFixture() {

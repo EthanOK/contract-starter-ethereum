@@ -42,3 +42,6 @@ node_modules
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/
+
+# Agent files
+/.agents

@@ -5,6 +5,9 @@ import "dotenv/config";
 
 export default defineConfig({
   plugins: [hardhatToolboxMochaEthersPlugin, hardhatContractSizer],
+  paths: {
+    tests: "./test_hardhat",
+  },
   solidity: {
     version: "0.8.34",
     settings: {
@@ -38,6 +41,16 @@ export default defineConfig({
       chainType: "l1",
       url: process.env.TBSC_RPC_URL!,
       accounts: [process.env.TBSC_PRIVATE_KEY!],
+    },
+    base: {
+      type: "http",
+      url: process.env.BASE_RPC_URL!,
+      accounts: [process.env.BASE_PRIVATE_KEY!],
+    },
+    baseSepolia: {
+      type: "http",
+      url: process.env.BASE_SEPOLIA_RPC_URL!,
+      accounts: [process.env.BASE_SEPOLIA_PRIVATE_KEY!],
     },
   },
   verify: {
