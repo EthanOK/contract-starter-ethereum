@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/EthanOK/contract-starter-ethereum/compare/v1.1.3...v1.2.0) (2026-06-24)
+
+
+### Features
+
+* add slowmist-agent-security skills ([2bd1d00](https://github.com/EthanOK/contract-starter-ethereum/commit/2bd1d0036dcfd1f689fc1e86281ca845c9c79d7b))
+* add solidity-security skill ([aef91cb](https://github.com/EthanOK/contract-starter-ethereum/commit/aef91cba1c8a4e7b1b8630accd685effb5adc8a4))
+* **b20:** add Base Sepolia fork tests and project setup ([3b854df](https://github.com/EthanOK/contract-starter-ethereum/commit/3b854dfb5b84f2c3964fc0d6690e069d3702787a))
+* test ERC7913SignatureVerifier contract ([49d83e1](https://github.com/EthanOK/contract-starter-ethereum/commit/49d83e1c8fc80c885b64f1f12b7d9e2fc12588bb))
+
 ### [1.1.3](https://github.com/EthanOK/contract-starter-ethereum/compare/v1.1.2...v1.1.3) (2026-01-22)
 
 ### [1.1.2](https://github.com/EthanOK/contract-starter-ethereum/compare/v1.1.0...v1.1.2) (2026-01-05)
